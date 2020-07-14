@@ -17,7 +17,8 @@ namespace OffsetUpdater
     public partial class Form1 : Form
     {
         //Config Directory
-        public string confPath = Environment.CurrentDirectory + @"\offs.conf";
+        public string confPath = Path.Combine(Environment.CurrentDirectory ,"offs.conf");
+        public string tempPath = Path.Combine(Path.GetTempPath(), "offs.conf");
         public Form1()
         {
             InitializeComponent();
@@ -39,6 +40,10 @@ namespace OffsetUpdater
             else
             {
                 MessageBox.Show("Config file not found , Press enter to create new config");
+                if (!File.Exists(tempPath))
+                {
+                    File.Create(tempPath);
+                }
                 File.Create(confPath);
                 Application.Restart();
             }
@@ -55,12 +60,13 @@ namespace OffsetUpdater
             }
             temp = null;
             File.WriteAllText(confPath, offset);
+            File.WriteAllText(tempPath, offset);
             lbl_stats.Text = "Done.";
             getFileInfo();
         }
 
-        string offsetsURL = "https://raw.githubusercontent.com/skrixx68/Dota2-Overlay-OffsetUpdater/master/latest_offsets.txt";
 
+        string offsetsURL = "https://raw.githubusercontent.com/skrixx68/Dota2-Overlay-OffsetUpdater/master/latest_offsets.txt";
 
         //Start updating offset from dataserver.
         private void button1_Click(object sender, EventArgs e)
