@@ -66,7 +66,7 @@ namespace OffsetUpdater
         }
 
 
-        string offsetsURL = "https://raw.githubusercontent.com/skrixx68/Dota2-Overlay-OffsetUpdater/master/latest_offsets.txt";
+        string offsetsURL = "https://raw.githubusercontent.com/newwide/Dota2-Overlay-OffsetUpdater/master/latest_offsets.txt";
 
         //Start updating offset from dataserver.
         private void button1_Click(object sender, EventArgs e)
