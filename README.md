@@ -1,3 +1,5 @@
+# Deprecated 
+
 # Dota2 Overlay OffsetUpdater
 	** Project abandoned ,Offsets will still be updated from time to time.**
 
