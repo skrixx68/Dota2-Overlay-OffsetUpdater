@@ -3,7 +3,7 @@
 # Dota2 Overlay OffsetUpdater
 	** Project abandoned ,Offsets will still be updated from time to time.**
 
-~~Fetch latest offset from dataserver(using this repository). ~~
+~~Fetch latest offset from dataserver(using this repository).~~
 
 ~~Purpose: Dota 2 updates regularly and program structure also change from time to time. so this is the only way i can think of by manually updating offset and uploading to server(pastebin).~~
 
