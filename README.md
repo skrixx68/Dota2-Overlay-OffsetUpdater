@@ -20,5 +20,5 @@ Most easiest way to update is using Cheat Engines Pointer Scan, just generate th
 
 Specific steps
 1. Scan for addresses using Nature Prophet in a lobby (Not Visible = 06(radiant team) , 10(dire team) ; Visible = 14), should get at least 3 results.
-2. Pointerscan these 3 addresses and find base address of engine2.dll that ends has 7 level of offsets, ending with 170 0 1E4.
+2. Pointerscan these 3 addresses and find base address of engine2.dll that ends with 7 level of offsets, ending with 170 0 1E4.
 3. Update latest_offsets.txt.
